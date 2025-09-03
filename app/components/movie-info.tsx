@@ -1,7 +1,7 @@
 import { URL as API_URL } from "../(home)/page";
 import styles from "../../styles/movie-info.module.css";
 
-const getDetailMovie = async (id: string) => {
+export const getDetailMovie = async (id: string) => {
   // await new Promise((resolve) => setTimeout(resolve, 1000));
   const response = await fetch(`${API_URL}/${id}`);
   return response.json();
